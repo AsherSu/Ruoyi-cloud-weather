@@ -11,7 +11,7 @@ import org.springframework.boot.context.metrics.buffering.BufferingApplicationSt
  * @author ruoyi
  */
 @EnableDubbo
-@SpringBootApplication
+@SpringBootApplication(scanBasePackages = {"org.dromara.system", "org.dromara.common"})
 public class RuoYiSystemApplication {
     public static void main(String[] args) {
         SpringApplication application = new SpringApplication(RuoYiSystemApplication.class);

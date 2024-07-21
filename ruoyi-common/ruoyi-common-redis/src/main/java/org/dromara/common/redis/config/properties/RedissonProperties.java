@@ -5,6 +5,7 @@ import lombok.NoArgsConstructor;
 import org.redisson.config.ReadMode;
 import org.redisson.config.SubscriptionMode;
 import org.springframework.boot.context.properties.ConfigurationProperties;
+import org.springframework.stereotype.Component;
 
 /**
  * Redisson 配置属性
@@ -13,6 +14,7 @@ import org.springframework.boot.context.properties.ConfigurationProperties;
  */
 @Data
 @ConfigurationProperties(prefix = "redisson")
+@Component
 public class RedissonProperties {
 
     /**

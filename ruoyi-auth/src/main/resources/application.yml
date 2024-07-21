@@ -29,3 +29,13 @@ spring:
     import:
       - optional:nacos:application-common.yml
       - optional:nacos:${spring.application.name}.yml
+  # redis通用配置 子服务可以自行配置进行覆盖
+  data:
+    redis:
+      host: localhost
+      port: 16379
+      # 密码(如没有密码请注释掉)
+      password: 123456
+      database: 0
+      timeout: 10s
+      ssl.enabled: false

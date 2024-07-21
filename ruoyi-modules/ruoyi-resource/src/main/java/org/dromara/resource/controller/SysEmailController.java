@@ -12,6 +12,7 @@ import org.dromara.common.web.core.BaseController;
 import org.dromara.common.mail.config.properties.MailProperties;
 import org.dromara.common.mail.utils.MailUtils;
 import org.dromara.common.redis.utils.RedisUtils;
+import org.springframework.context.annotation.DependsOn;
 import org.springframework.validation.annotation.Validated;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;

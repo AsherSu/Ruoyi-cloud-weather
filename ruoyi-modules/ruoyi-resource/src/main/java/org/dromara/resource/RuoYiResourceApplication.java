@@ -5,6 +5,7 @@ import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.boot.autoconfigure.jdbc.DataSourceAutoConfiguration;
 import org.springframework.boot.context.metrics.buffering.BufferingApplicationStartup;
+import org.springframework.boot.context.properties.EnableConfigurationProperties;
 
 /**
  * 资源服务
@@ -12,7 +13,7 @@ import org.springframework.boot.context.metrics.buffering.BufferingApplicationSt
  * @author Lion Li
  */
 @EnableDubbo
-@SpringBootApplication(exclude = {DataSourceAutoConfiguration.class})
+@SpringBootApplication(scanBasePackages = {"org.dromara.resource", "org.dromara.common"} ,exclude = {DataSourceAutoConfiguration.class})
 public class RuoYiResourceApplication {
     public static void main(String[] args) {
         SpringApplication application = new SpringApplication(RuoYiResourceApplication.class);

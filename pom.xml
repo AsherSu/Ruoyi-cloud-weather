@@ -375,6 +375,8 @@
         <module>ruoyi-api</module>
         <module>ruoyi-common</module>
         <module>ruoyi-example</module>
+        <module>ai-models</module>
+        <module>weather-service</module>
     </modules>
     <packaging>pom</packaging>
 
